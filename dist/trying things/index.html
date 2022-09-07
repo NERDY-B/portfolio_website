@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    
+    <link rel="stylesheet" href="../fontcss/all.css">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Dosis:wght@400;500&display=swap" rel="stylesheet">
+
+<style>
+body{
+    font-family: 'dosis', sans-serif;
+}
+
+    #header{
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-gap:2rem;
+        position: fixed;
+        background: #ccc;
+        border-bottom: 3px solid coral;
+        width: 1280px;
+        padding-left:10px;
+    }
+
+    /* nav{
+        max-width: 1280px;
+    } */
+    #header .logo-icon, .social ul, #header .navigate{
+        display: flex;
+        align-content: center;
+        justify-content:center;
+    }
+
+    .social ul{
+        list-style: none;
+    }
+
+    .social ul li{
+        padding: 10px 3px;
+    }
+    .navigate p{
+        padding: 10px 1rem;
+    }
+    .navigate .current{
+        background-color: rgb(185, 31, 31);
+        
+        border-left:3px solid coral;
+    }
+    .navigate p{
+        padding:5px 10px -7px 10px;
+    }
+    .navigate p a{
+        text-decoration: none;
+        color: black;
+    }
+</style>
+
+</head>
+<body>
+    <nav id="header">
+        <div class="logo-icon">
+            <h1>N</h1>
+            <div class="logo"><h3>NewsGrid</h3></div>
+        </div>
+        <!-- for the fontawesome icon -->
+        <div class="social">
+            <ul>
+                <li><i class="fa-brands fa-square-facebook fa-2x"></i></li>
+                <li><i class="fa-brands fa-square-twitter fa-2x"></i></li>
+                <li><i class="fa-brands fa-square-instagram fa-2x"></i></li>
+                <li><i class="fa-brands fa-square-youtube fa-2x"></i></li>
+            </ul>
+        </div>
+
+        <!-- navigation button as Home and about -->
+        <div class="navigate">
+            <p class="current"><a href="index.html">Home</a></p>
+            <p><a href="#">About</a></p>
+        </div>
+    </nav>
+</body>
+</html>
